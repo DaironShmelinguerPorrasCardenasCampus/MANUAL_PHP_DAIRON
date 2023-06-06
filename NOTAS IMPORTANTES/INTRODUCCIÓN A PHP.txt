@@ -35,7 +35,7 @@ en la que el sistema reconoce que trabajaremos en formato php.
 2.2 FUNCIONES DE SALIDA EN PHP -> VEA CARPETA EJERCICIOS PRÁCTICOS -> APARTADO SALIDA.PHP
  
  Estas funciones de salida nos permiten mostrar información relevante al usuario. Los dife-
- rentes ejemplos se llevarán acabo en el respectivo módulo -> VEA CARPETA EJERCICIOS PRÁCTICOS -> APARTADO SALIDA.PHP
+ rentes ejemplos se llevarán acabo en el respectivo módulo -> VEA CARPETA EJERCICIOS PRÁCTICOS -> APARTADO SALIDA.PHP LINEA 10 
 
 2.2.1 ECHO
 FUNCIÓN MÁS COMÚN PARA IMPRIMIR EN PHP - IMPRIME VARIAS CADENAS DE TEXTO.
@@ -47,7 +47,7 @@ FUNCIÓN MÁS COMÚN PARA IMPRIMIR EN PHP - IMPRIME VARIAS CADENAS DE TEXTO.
 3. VARUABLES Y TIPOS DE VARIABLES 
 
 Toda variable ne php se define con el signo $, seguido del nombre de la misma, por ultimo se le 
-asigna a la variable el valor coreespondiente -> VEA CARPETA EJERCICIOS PRÁCTICOS -> APARTADO SALIDA.PHP
+asigna a la variable el valor coreespondiente -> VEA CARPETA EJERCICIOS PRÁCTICOS -> APARTADO SALIDA.PHP LINEA 33
 
 3.1 TIPOS DE DATOS 
 3.3.1 ENTEROS -> INT = ALMACENA DATOS NUMÉRICOS 
@@ -57,3 +57,57 @@ asigna a la variable el valor coreespondiente -> VEA CARPETA EJERCICIOS PRÁCTIC
 3.3.5 ARREGLOS -> ARRAY = ALMACENA UNA COLECCIÓN DE DATOS 
 3.3.6 OBJETOS -> OBJECT = ALMACENA INSTANCIAS DE CLASES
 3.3.7 NULOS 
+
+4. OPERADORES PHP 
+
+4.1 ASIGNACIÓN 
+---------------------------------------------------------------------------------------------------------------------------------
+ASIGNACIÓN	    IGUAL QUE       DESCRIPCIÓN
+x = y	        x = y	        El operando de la izquierda se establece en el valor de la expresión de la derecha
+x += y	        x = x + y	    SUMA	
+x -= y	        x = x - y	    RESTA
+x *= y	        x = x * y	    MULTIPLICACIÓN
+x /= y	        x = x / y	    DIVISIÓN
+x %= y	        x = x % y	    MÓDULO
+
+4.2 ARITMÉTICOS
+---------------------------------------------------------------------------------------------------------------------------------
+OPERADOR          NOMBRE                EJEMPLO     RESULTADO	
+    +	          SUMA	                $x + $y	    Sum of $x and $y	
+    -	          RESTA	                $x - $y	    Difference of $x and $y	
+    *	          MULTIPLICACIÓN	    $x * $y	    Product of $x and $y	
+    /	          DIVISIÓN	            $x / $y	    Quotient of $x and $y	
+    %	          MÓDULO	            $x % $y	    Remainder of $x divided by $y	
+    **	          EXPONENTE	            $x ** $y	Result of raising $x to the $y'th power
+
+4.3 COMPARACIÓN
+---------------------------------------------------------------------------------------------------------------------------------
+   OPERADOR	        NOMBRE              EJEMPLO         RESULTADO 	
+    ==              Igual a             $x == $y        Devuelve verdadero si $x es igual a $y
+    ===             Idéntico            $x === $y       Devuelve verdadero si $x es igual a $y, y son del mismo tipo
+    !=              No es igual a       $x != $y        Devuelve verdadero si $x no es igual a $y
+    <>              Distinto de         $x <> $y        Devuelve verdadero si $x no es igual a $y
+    !== $x          no idénticos        !== $y          Devuelve verdadero si $x no es igual a $y, o si no son del mismo tipo
+    >               Mayor que           $x > $y         Devuelve verdadero si $x es mayor que $y
+    <               Menor que           $x < $y         Devuelve verdadero si $x es menor que $y
+    >=              mayor o igual que   $x >= $y        Devuelve verdadero si $x es mayor o igual que $y
+    <=              Menor o igual que   $x <= $y        Devuelve verdadero si $x es menor o igual que $y
+    <=>             Nave espacial       $x <=> $y       Devuelve un número entero menor, igual o mayor que cero,    
+                                                        dependiendo de si $x es menor, igual o mayor que $y. Introducido en PHP 7.
+4.4 INCREMENTO - DECREMENTO
+----------------------------------------------------------------------------------------------------------------------------------
+   OPERADOR       NOMBRE            DESCRIPCIÓN 
+    ++$x          Pre-incremento    Incrementa $x en uno, luego devuelve $x
+    $x++          Post-incremento   Devuelve $x, luego incrementa $x en uno
+    --$x          Predecremento     Decrementa $x en uno, luego devuelve $x
+    $x--          Post-decremento   Devuelve $x, luego decrementa $x en uno
+
+4.5 LÓGICOS
+----------------------------------------------------------------------------------------------------------------------------------
+  OPERADOR	    NOMBRE	    EJEMPLO	        RESULTADO
+    and	        And	        $x and $y	    Verdadero si tanto $x como $y son verdaderos
+    or	        Or	        $x or $y	    Verdadero si $x o $y son verdaderos
+    xor	        Xor	        $x xor $y	    Verdadero si $x o $y son verdaderos, pero no ambos
+    &&	        And	        $x && $y	    Verdadero si tanto $x como $y son verdaderos
+    ||	        Or	        $x || $y	    Verdadero si $x o $y son verdaderos
+    !	        Not	!       $x	            Verdadero si $x no es verdadero
