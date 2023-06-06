@@ -1,0 +1,51 @@
+
+5. ARREGLOS
+Un array() puede contener muchos valores bajo un solo nombre y puede acceder a los valores haciendo referencia a un número de índice.
+
+5.1 ESTRUCTURA DE UN ARRAY -> VEA EL APARTADO DE ARREGLOS EN LA CARPETA EJERCICIOS
+
+$ARRAY = array( "", "", "");
+
+Para asignar los indices de los arreglos se puede realizar de dos formas:
+
+5.1.1 AUTOMÁTICA -> INDICE EMPIEZA DE 0
+$cars = array("Volvo", "BMW", "Toyota");
+
+5.1.2 DIRECTA 
+$cars[0] = "Volvo";
+$cars[1] = "BMW";
+$cars[2] = "Toyota";
+
+5.2 RECORRER UN ARRAY INDEXADO 
+Para recorrer e imprimir todos los valores de un array indexado,se implementa el ciclo FOR:
+
+$campers = array("Dairon", "Angela", "Andrés");
+$contar= count($campers);
+
+for($i = 0; $i < $contar; $i++) {
+  echo $campers[$x];
+  echo "<br>";
+}
+
+5.3 RECORRER UN ARRAY ASOCIATIVOS 
+Para recorrer e imprimir todos los valores de un array asociativa se usa un ciclo FOREACH
+
+$edad = array(
+    "Dairon" => "20",
+    "Angela" => "25",
+    "Diego"  => "30"
+);
+
+foreach ($edad as $key => $value) {
+    echo "Nombre : " .$key. " y" ." Edad: " . $value . " años";
+    echo "<br>";
+}
+
+5.4 FUNCIONES O MÉTODOS PARA ARRAYS
+
+sort()- ordenar arreglos en orden ascendente
+rsort()- ordenar matrices en orden descendente
+asort()- ordenar matrices asociativas en orden ascendente, según el valor
+ksort()- ordenar matrices asociativas en orden ascendente, según la clave
+arsort()- ordenar matrices asociativas en orden descendente, según el valor
+krsort()- ordenar matrices asociativas en orden descendente, según la clave
