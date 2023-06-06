@@ -69,6 +69,7 @@ x -= y	        x = x - y	    RESTA
 x *= y	        x = x * y	    MULTIPLICACIÓN
 x /= y	        x = x / y	    DIVISIÓN
 x %= y	        x = x % y	    MÓDULO
+-------------------------------------------------------------------------------------------------------------------------------
 
 4.2 ARITMÉTICOS
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -79,6 +80,7 @@ OPERADOR          NOMBRE                EJEMPLO     RESULTADO
     /	          DIVISIÓN	            $x / $y	    Quotient of $x and $y	
     %	          MÓDULO	            $x % $y	    Remainder of $x divided by $y	
     **	          EXPONENTE	            $x ** $y	Result of raising $x to the $y'th power
+---------------------------------------------------------------------------------------------------------------------------------
 
 4.3 COMPARACIÓN
 ---------------------------------------------------------------------------------------------------------------------------------
@@ -94,6 +96,8 @@ OPERADOR          NOMBRE                EJEMPLO     RESULTADO
     <=              Menor o igual que   $x <= $y        Devuelve verdadero si $x es menor o igual que $y
     <=>             Nave espacial       $x <=> $y       Devuelve un número entero menor, igual o mayor que cero,    
                                                         dependiendo de si $x es menor, igual o mayor que $y. Introducido en PHP 7.
+----------------------------------------------------------------------------------------------------------------------------------
+
 4.4 INCREMENTO - DECREMENTO
 ----------------------------------------------------------------------------------------------------------------------------------
    OPERADOR       NOMBRE            DESCRIPCIÓN 
@@ -101,6 +105,7 @@ OPERADOR          NOMBRE                EJEMPLO     RESULTADO
     $x++          Post-incremento   Devuelve $x, luego incrementa $x en uno
     --$x          Predecremento     Decrementa $x en uno, luego devuelve $x
     $x--          Post-decremento   Devuelve $x, luego decrementa $x en uno
+----------------------------------------------------------------------------------------------------------------------------------
 
 4.5 LÓGICOS
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -111,3 +116,4 @@ OPERADOR          NOMBRE                EJEMPLO     RESULTADO
     &&	        And	        $x && $y	    Verdadero si tanto $x como $y son verdaderos
     ||	        Or	        $x || $y	    Verdadero si $x o $y son verdaderos
     !	        Not	!       $x	            Verdadero si $x no es verdadero
+----------------------------------------------------------------------------------------------------------------------------------    
