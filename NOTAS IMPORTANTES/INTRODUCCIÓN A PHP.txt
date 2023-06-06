@@ -1,0 +1,45 @@
+1. QUÉ ES PHP ? 
+
+PHP es un lenguaje de código abierto que nos permite tener interacción
+con documentos HTML. Es un lenguaje que va orientado a servidor, pero 
+se puede implentar en diferentes entornos.
+
+NOTA: Es importante entender en entorno que trabajamos, pues si nuestro
+es windows, sus heraamientas o motores son diferentes a las de linux.
+
+2. ESTRUCTURA BÁSICA DE PHP 
+
+Es importante al momento de realizar cualquier proyecto en diferentes lenguajes 
+definir el patrón de desarrollo o arquitectura de software, pues la estructura y
+la forma en la que se almacena la información es importante. 
+
+EJEMPLO DE ESTRUCTURA -> MODELO VISTA - CONTROLADOR 
+
+1. Modelo: Maneja datos y lógica de negocios.
+2. Vista: Se encarga del diseño y presentación.
+3. Controlador: Enruta comandos a los modelos y vistas.
+
+2.1 ARCHIVOS Y SCRIPTS
+
+Cada archivo PHP debe finalizar con el identificador php. EJEMPLO: index.php -> forma
+en la que el sistema reconoce que trabajaremos en formato php.
+
+2.1.1 ETIQUETA PHP 
+
+<?php
+
+  //EN ESTA PARTE INCLUIMOS TODO NUESTRO CÓDIGO PHP 
+
+?>
+
+2.2 FUNCIONES DE SALIDA EN PHP -> VEA CARPETA EJERCICIOS PRÁCTICOS -> APARTADO SALIDA.PHP
+ 
+ Estas funciones de salida nos permiten mostrar información relevante al usuario. Los dife-
+ rentes ejemplos se llevarán acabo en el respectivo módulo -> VEA CARPETA EJERCICIOS PRÁCTICOS -> APARTADO SALIDA.PHP
+
+2.2.1 ECHO
+FUNCIÓN MÁS COMÚN PARA IMPRIMIR EN PHP - IMPRIME VARIAS CADENAS DE TEXTO.
+
+2.2.2 PRINT() -> IMPRIME SOLO UNA CADENA DE TEXTO A LA VEZ
+
+2.2.3 SPRINTF() -> DEVUELVE UNA CADENA FORMATEADA 
