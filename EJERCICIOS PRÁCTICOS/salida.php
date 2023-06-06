@@ -28,6 +28,30 @@
 
 ?>
 
+<br><br>
+
+<?php
+
+$logueo = true;
+var_dump($logueo);
+
+$numero = 300;
+var_dump($numero);
+
+$float = 3.55;
+var_dump($float);
+
+$nombre = dairon ;
+var_dump($nombre);
+
+$arrayEj = array('dairon', 'angela' , 'AndrésChiquito');
+echo "<pre>";
+var_dump($arrayEj);
+echo "</pre>";
+echo  $arrayEj[0];
+
+?>
+
 
 
 
