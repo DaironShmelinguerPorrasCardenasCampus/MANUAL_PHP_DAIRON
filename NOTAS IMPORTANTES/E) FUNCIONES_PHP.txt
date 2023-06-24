@@ -1,0 +1,85 @@
+8. FUNCIONES -----------------------------------------------------------------------------------------------
+
+Las funciones en PHP son bloques de código reutilizables que realizan una tarea específica. Permiten
+encapsular la lógica de programación en unidades independientes y modularizar el código, lo que faci
+lita el mantenimiento, la legibilidad y la reutilización.
+
+
+8.1 DECLARACIÓN DE FUNCIONES EN PHP ------------------------------------------------------------------------
+
+* Se inician con la palabra clave "function", seguida del nombre de la función y paréntesis que pueden 
+contener parámetros.
+* Pueden tener un tipo de retorno especificado con la palabra clave "return".
+* Pueden o no tener parámetros de entrada.
+
+EJEMPLO PARTE A
+
+function saludar() {
+    echo "¡Hola!";
+}
+
+function sumar($a, $b) {
+    return $a + $b;
+}
+
+8.2 LLAMAR LAS FUNCIONES -----------------------------------------------------------------------------------
+
+* Para ejecutar una función, se utiliza el nombre de la función seguido de paréntesis, y se pueden pasar los 
+argumentos necesarios.
+
+* El resultado de una función puede ser almacenado en una variable o utilizado directamente.
+
+EJEMPLO PARTE B
+
+saludar(); // Imprime "¡Hola!"
+
+$resultado = sumar(5, 3);
+echo $resultado; // Imprime 8
+
+8.3 PARAMETROS ----------------------------------------------------------------------------------------------
+
+* Las funciones pueden aceptar parámetros que se utilizan como variables locales dentro de la función.
+
+* Los parámetros pueden tener valores predeterminados, lo que permite que sean opcionales al llamar a la función.
+
+EJEMPLO 
+
+function saludarNombre($nombre = "Usuario") {
+    echo "¡Hola, $nombre!";
+}
+
+saludarNombre(); // Imprime "¡Hola, Usuario!"
+saludarNombre("Juan"); // Imprime "¡Hola, Juan!"
+
+8.4 RETORNO DE VALORES ----------------------------------------------------------------------------------------
+
+* Las funciones pueden devolver un valor utilizando la palabra clave "return".
+
+* Pueden devolver cualquier tipo de dato, incluyendo arrays y objetos.
+
+EJEMPLO
+
+function multiplicar($a, $b) {
+    return $a * $b;
+}
+
+$resultado = multiplicar(4, 6);
+echo $resultado; // Imprime 24
+
+8.5 VARIABLES ---------------------------------------------------------------------------------------------------
+
+* Las variables definidas dentro de una función tienen un alcance local y solo están disponibles dentro de esa función.
+
+* Las variables globales, definidas fuera de las funciones, no son accesibles directamente dentro de ellas, a menos que 
+se utilice la palabra clave "global".
+
+EJEMPLO
+
+$mensaje = "Hola desde el ámbito global";
+
+function imprimirMensaje() {
+    global $mensaje;
+    echo $mensaje;
+}
+
+imprimirMensaje(); // Imprime "Hola desde el ámbito global"
