@@ -1,0 +1,55 @@
+1. ¿Qué es una base de datos? -----------------------------------------------------------------------------------------------------------
+
+- Una base de datos es un sistema organizado para almacenar, administrar y recuperar datos de manera eficiente.
+
+- MySQL es un sistema de gestión de bases de datos relacional, ampliamente utilizado debido a su rendimiento y facilidad de uso.
+
+2. Estructura de una base de datos -------------------------------------------------------------------------------------------------------
+
+- Una base de datos MySQL se compone de tablas, que contienen filas y columnas para almacenar los datos.
+
+- Cada tabla tiene un nombre y está formada por campos (columnas) que definen los tipos de datos y restricciones, y registros (filas) que 
+  representan las instancias individuales de los datos.
+
+3. Comandos básicos de MySQL--------------------------------------------------------------------------------------------------------------
+
+- CREATE DATABASE: Crea una nueva base de datos.
+
+- USE: Selecciona la base de datos a utilizar.
+
+- CREATE TABLE: Crea una nueva tabla dentro de la base de datos.
+
+- INSERT INTO: Inserta nuevos registros en una tabla.
+
+- SELECT: Recupera datos de una o más tablas.
+
+- UPDATE: Modifica los datos existentes en una tabla.
+
+- DELETE: Elimina registros de una tabla.
+
+- DROP TABLE: Elimina una tabla de la base de datos.
+
+4. Tipos de datos en MySQL ---------------------------------------------------------------------------------------------------------------
+
+- MySQL ofrece una variedad de tipos de datos para almacenar diferentes tipos de información, como enteros, cadenas de texto, fechas, etc.
+
+- Algunos tipos de datos comunes incluyen INT, VARCHAR, TEXT, DATE, DATETIME, entre otros.
+
+5. Claves primarias y claves externas ----------------------------------------------------------------------------------------------------
+
+- Una clave primaria es un campo o conjunto de campos que identifican de manera única cada registro en una tabla.
+
+- Una clave externa se utiliza para establecer una relación entre dos tablas basada en un campo común.
+
+6. Consultas avanzadas -------------------------------------------------------------------------------------------------------------------
+
+- MySQL ofrece una amplia gama de funciones y operadores para realizar consultas más avanzadas, como JOIN para combinar datos de múltiples
+ tablas, GROUP BY para agrupar datos, y funciones como COUNT, SUM, AVG, entre otras.
+
+7. Índices -------------------------------------------------------------------------------------------------------------------------------
+
+- Los índices en MySQL mejoran el rendimiento de las consultas al acelerar la búsqueda de datos.
+
+- Puedes crear índices en columnas específicas para agilizar las operaciones de búsqueda y clasificación.
+
+
