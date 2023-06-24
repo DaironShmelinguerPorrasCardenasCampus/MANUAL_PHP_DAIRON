@@ -1,6 +1,11 @@
 
 5. ARREGLOS
-Un array() puede contener muchos valores bajo un solo nombre y puede acceder a los valores haciendo referencia a un número de índice.
+
+Los arrays en PHP son estructuras de datos que permiten almacenar múltiples valores relacionados bajo un solo nombre. 
+Son una de las características fundamentales del lenguaje y se utilizan ampliamente para almacenar y manipular conju
+ntos de datos.
+Un array() puede contener muchos valores bajo un solo nombre y puede acceder a los valores haciendo referencia a un 
+número de índice.
 
 5.1 ESTRUCTURA DE UN ARRAY -> VEA EL APARTADO DE ARREGLOS EN LA CARPETA EJERCICIOS
 
@@ -49,3 +54,12 @@ asort()- ordenar matrices asociativas en orden ascendente, según el valor
 ksort()- ordenar matrices asociativas en orden ascendente, según la clave
 arsort()- ordenar matrices asociativas en orden descendente, según el valor
 krsort()- ordenar matrices asociativas en orden descendente, según la clave
+
+---------------------------------------------------------------------------------
+
+count(): Devuelve el número de elementos de un array.
+array_push(): Agrega uno o más elementos al final de un array.
+array_pop(): Elimina y devuelve el último elemento de un array.
+array_merge(): Combina dos o más arrays en uno nuevo.
+array_keys(): Devuelve un array con todas las claves de un array.
+array_values(): Devuelve un array con todos los valores de un array.
