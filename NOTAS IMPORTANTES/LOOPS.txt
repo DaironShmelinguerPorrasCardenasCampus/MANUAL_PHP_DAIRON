@@ -1,0 +1,68 @@
+7. BUCLES 
+
+7.1 WHILE -----------------------------------------------------------------------------------
+
+Este ciclo se ejecuta siempre que la condición especificada sea verdadera.
+
+$x = 1;
+
+while($x <= 5) {
+  echo "El número es: $x <br>";
+  $x++;
+}
+
+7.2 DO WHILE --------------------------------------------------------------------------------
+ El ciclo comienza ejecutando el bloque de código sin verificar la condición. Después de la 
+ ejecución, se evalúa la condición.Si la condición se cumple, el ciclo se repite y el bloque 
+ de código se ejecuta nuevamente. Esto continúa hasta que la condición ya no se cumpla, 
+ momento en el cual el ciclo se detiene y la ejecución del programa continúa con la siguiente
+ instrucción después del ciclo.
+
+$x = 1;
+
+do {
+  echo "El número es: $x <br>";
+  $x++;
+} while ($x <= 5);
+
+7.3 FOR ------------------------------------------------------------------------------------
+
+ESTRUCTURA
+
+for (inicialización; condición; incremento/decremento) {
+    // bloque de código a ejecutar
+}
+
+EXPLICACIÓN : La sección "inicialización" se utiliza para establecer una variable de control 
+y asignarle un valor inicial. La sección "condición" es una expresión que se evalúa antes de
+cada iteración y, si se cumple, el bloque de código se ejecuta. La sección "incremento/decre
+mento" se utiliza para modificar el valor de la variable de control en cada iteración.
+
+EJEMPLO
+for ($i = 1; $i <= 5; $i++) {
+    echo $i . ' ';
+}
+
+7.4 FOREACH --------------------------------------------------------------------------------
+
+Se utiliza principalmente cuando se trabaja con estructuras de datos como arrays, listas o 
+conjuntos, y permite recorrer cada elemento de manera secuencial sin necesidad de utilizar 
+un índice explícito.
+
+ESTRUCTURA
+
+foreach ($array as $elemento) {
+    // bloque de código a ejecutar para cada elemento
+}
+
+EXPLICACIÓN : En este caso, "$array" representa la matriz o colección de datos sobre la cual
+se iterará, y "$elemento" es una variable que toma el valor de cada elemento de la matriz en
+cada iteración.
+
+EJEMPLO
+$frutas = array("manzana", "plátano", "naranja");
+
+foreach ($frutas as $fruta) {
+    echo $fruta . "<br>";
+}
+
