@@ -1,0 +1,104 @@
+1. PROGRAMACIÓN ORIENTADA A OBJETOS -----------------------------------------------------------------------------------
+
+La Programación Orientada a Objetos (POO) es un paradigma de programación que se basa en el concepto de objetos, 
+los cuales son instancias de clases. En PHP, la POO permite organizar y estructurar el código de manera más efic
+iente y modular, al agrupar datos y comportamientos relacionados en clases y objetos.
+
+1.1 CLASES ------------------------------------------------------------------------------------------------------------
+
+Una clase es una plantilla o definición que describe los atributos y comportamientos de un objeto. Se define
+utilizando la palabra clave "class". Los atributos son variables que almacenan los datos de un objeto, y los 
+métodos son funciones que definen el comportamiento de los objetos.
+
+EJEMPLO
+
+class Persona {
+    // Atributos
+    public $nombre;
+    public $edad;
+    
+    // Métodos
+    public function saludar() {
+        echo "Hola, mi nombre es " . $this->nombre;
+    }
+}
+
+1.2 OBJETOS ------------------------------------------------------------------------------------------------------------
+
+Un objeto es una instancia de una clase. Se crea utilizando la palabra clave "new" seguida del nombre de la clase. Los 
+objetos tienen acceso a los atributos y métodos de su clase.
+
+EJEMPLO
+
+$persona1 = new Persona();
+$persona1->nombre = "Juan";
+$persona1->edad = 25;
+$persona1->saludar(); // Imprime: "Hola, mi nombre es Juan"
+
+1.3 ENCAPSULAMIENTO ----------------------------------------------------------------------------------------------------
+
+El encapsulamiento es un principio de la POO que se refiere a la ocultación y protección de los datos y comportamientos 
+internos de una clase. Se utiliza para garantizar que solo se acceda y modifique los datos de un objeto a través de mét
+odos específicos.
+
+EJEMPLO 
+
+class Persona {
+    private $nombre;
+    
+    public function setNombre($nuevoNombre) {
+        $this->nombre = $nuevoNombre;
+    }
+    
+    public function getNombre() {
+        return $this->nombre;
+    }
+}
+
+$persona = new Persona();
+$persona->setNombre("María");
+echo $persona->getNombre(); // Imprime: "María"
+
+1.4 HERENCIA ---------------------------------------------------------------------------------------------------------
+
+La herencia es un mecanismo que permite crear nuevas clases basadas en clases existentes. Una clase derivada hereda 
+los atributos y métodos de la clase base, y puede agregar nuevos atributos y métodos, o modificar los existentes. Se
+ utiliza la palabra clave "extends" para establecer una relación de herencia.
+
+EJEMPLO
+
+class Empleado extends Persona {
+    private $salario;
+    
+    public function setSalario($nuevoSalario) {
+        $this->salario = $nuevoSalario;
+    }
+    
+    public function getSalario() {
+        return $this->salario;
+    }
+}
+
+$empleado = new Empleado();
+$empleado->setNombre("Carlos");
+$empleado->setSalario(5000);
+echo $empleado->getNombre(); // Imprime: "Carlos"
+echo $empleado->getSalario(); // Imprime: 5000
+
+1.5 POLIMORFISMO ------------------------------------------------------------------------------------------------------
+
+El polimorfismo permite que un objeto pueda tomar múltiples formas y comportarse de manera diferente según el contexto. 
+En PHP, esto se logra mediante la implementación de interfaces y la utilización de métodos con el mismo nombre en dife
+rentes clases.
+
+EJEMPLO
+
+interface Animal {
+    public function hacerSonido();
+}
+
+class Perro implements Animal {
+    public function hacerSonido() {
+        echo "Guau";
+    }
+}
