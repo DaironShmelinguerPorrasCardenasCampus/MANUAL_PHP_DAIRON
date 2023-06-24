@@ -1,0 +1,58 @@
+6. DECLARACIONES Y CICLOS 
+
+if -> ejecuta algún código si una condición es verdadera
+if else -> ejecuta algún código si una condición es verdadera y otro código si esa condición es falsa
+if elseif...else -> ejecuta diferentes códigos para más de dos condiciones
+switch -> selecciona uno de los muchos bloques de código que se ejecutarán
+
+EJEMPLO IF -------------------------------------------------------------------------------------------
+<?php
+$edad = 20
+
+if ($edad >= 20) {
+  echo "Te estás poniendo viejo";
+}
+?>
+
+EJEMPLO IF ELSE --------------------------------------------------------------------------------------
+
+$edad = 18;
+
+if ($edad < 18  ) {
+  echo "Eres menor de edad!";
+} else {
+  echo "Eres mayor de edad!";
+}
+
+
+EJEMPLO IF ELSEIF ELSE --------------------------------------------------------------------------------
+
+$t = date("H");
+
+if ($t < "10") {
+  echo "Have a good morning!";
+} elseif ($t < "20") {
+  echo "Have a good day!";
+} else {
+  echo "Have a good night!";
+}
+
+EJEMPLO SWITCH ----------------------------------------------------------------------------------------
+
+
+$favcolor = "lila";
+
+switch ($favcolor) {
+  case "lila":
+    echo "el lila es tu color favorito!";
+    break;
+  case "azul":
+    echo "el azul es tu color favorito!";
+    break;
+  case "verde":
+    echo "el verde es tu color favorito!";
+    break;
+  default:
+    echo "tú color favorito no es ninguno :|!";
+}
+------------------------------------------------------------------------------------------------------
